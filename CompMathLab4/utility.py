@@ -37,7 +37,6 @@ def forw_gauss(m,b):
         ans.append(k)
     return ans, sign
 
-
 def back_gauss(matrix, det):
     n = len(matrix)
     x1 = [0 for x in range(n)]
@@ -81,6 +80,7 @@ def calc_deviation(x_p, y_p, phi):
     for i in t:
         sm += i ** 2
     return sm
+    
 def stand_deviation(x_p, y_p, phi, n):
     s1 = 0
     for x,y in zip(x_p, y_p):
